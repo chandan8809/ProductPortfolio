@@ -7,19 +7,39 @@ import Education from './Component/Education';
 import Hamburger from './Component/Hamburger';
 import ContactMe from './Component/ContactMe';
 import SideBar from './Component/SideBar';
+import FramerAdvance from './Component/FramerAdvance';
+import WorkProgress from './Component/WorkProgress';
+import MainBlog from './Component/blog/MainBlog';
 
+// import HeaderBank from './Component/bank/HeaderBank';
+// import MainList from './Component/bank/MainList';
+
+
+
+
+{/* <HeaderBank/>
+<MainList/> */}
+{/* <FramerAdvance/> */}
 
 
 
 function App() {
+  
   return (
-    <div className="App">
+    <div className="App font-link">
       <SideBar/>
+     
       <Header/>
       <Main/>
       <Skills/>
-      <Education/>
-      <Hamburger/>
+
+      
+        <WorkProgress/>
+        <Hamburger/>
+        <Education/>
+    
+      
+
       <ContactMe/>
     </div>
   );

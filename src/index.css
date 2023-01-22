@@ -9,26 +9,43 @@
 
 }
 
+:root {
+  --primary-color: #fff;
+  --secondary-color: #000;
+  --slate-200:#e2e8f0;
+  --slate-400:#94a3b8;
+  --blue-500:#3b82f6;
+  font-family: 'Lato', sans-serif  !important;
+font-family: 'Roboto', sans-serif;
+font-family: 'Rubik', sans-serif;
+}
+
+
 .sidenav {
   height: 100%;
-  width: 100px;
+  width: 120px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: rgb(0, 0, 0);
   overflow-x: hidden;
   
 }
 
 .sidenav a {
   padding: 12px ;
+  font:bold;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   color: #818181;
   display: block;
 }
 
 .sidenav a:hover {
   color: #f1f1f1;
+}
+
+.font-link {
+  font-family: 'Rubik', sans-serif;
 }
