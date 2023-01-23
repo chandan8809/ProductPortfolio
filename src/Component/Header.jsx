@@ -15,9 +15,9 @@ const Header = () => {
             />
           </div>
           <div>
-            <p className="text-base">Luis Jurado</p>
+            <p className="text-base">Balaji K</p>
             <p className="italic font-light text-sm">
-              Product Manager & Agile Coach
+              Product Manager
             </p>
           </div>
         </div>

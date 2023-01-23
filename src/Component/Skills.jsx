@@ -22,10 +22,10 @@ const Skills = () => {
     
     <main className='px-6 py-16 space-y-6  bg-gray-100 mx-auto  lg:bg-white'>
         <div className='lg:w-[calc(100%-210px)] lg:ml-auto lg:mr-0'>
-            <p className='text-3xl font-semibold tracking-wide border-b-4 border-red-500 inline-block font-ubanto'>WHAT I DO</p>
-            <div className='flex flex-col  items-center gap-20 lg:flex-row lg:pt-20 lg:flex-wrap px-16'>
+            <p className='text-3xl font-semibold tracking-wide border-b-4 border-red-500 inline-block font-ubanto mb-10 lg:mb-0'>WHAT I DO</p>
+            <div className='flex flex-col  lg:items-center gap-20 lg:flex-row lg:pt-20 lg:flex-wrap px-16'>
 
-                <div className='flex  items-start gap-5 flex-[20%]'>
+                <div className='flex  items-start gap-5 ml-[-20px] lg:ml-0 flex-[20%] '>
                     <img src={product} alt="" className='w-20 h-20' />
                     <p className=''>PRODUCT MANAGEMENT</p>
                 </div>

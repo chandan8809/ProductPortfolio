@@ -17,13 +17,13 @@ const WorkProgress = () => {
   return (
     <div>
          
-    <main className='px-6 py-16 space-y-6  bg-gray-100 mx-auto  lg:bg-gray-100'>
+    <main className='px-6 py-16 space-y-6  bg-gray-100 mx-auto mt-[-200px] lg:mt-0 lg:bg-gray-100'>
         <div className='lg:w-[calc(100%-210px)] lg:ml-auto lg:mr-0'>
             <p className='text-3xl font-semibold tracking-wide border-b-4 border-red-500 inline-block font-ubanto'>WORK PROCESS</p>
-            <div className='pr-20'>
-                <p className='text-2xl text-gray-500 pt-10 text-center font-extralight'>Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do.</p>
+            <div className='pr-0 lg:pr-20'>
+                <p className='text-xl lg:text-xl text-gray-500 pt-10 text-center font-extralight'>Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do.</p>
             </div>
-            <div className='flex flex-col  items-center lg:flex-row lg:pt-20 lg:flex-wrap  pr-20'>
+            <div className='flex flex-col  items-center lg:flex-row lg:pt-20 lg:flex-wrap  pr-0 pt-10 lg:pr-20'>
 
                 <div className='flex flex-1 flex-col items-center gap-5 px-4 py-6 bg-white shadow-lg hover:scale-110 transition'>
                     <img src={search} alt="" className='w-20 h-20' />
