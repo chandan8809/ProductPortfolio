@@ -26,7 +26,8 @@ import MainBlog from './Component/blog/MainBlog';
 function App() {
   
   return (
-    <div className="App font-link">
+    <div className="App font-ubanto">
+      {/* <MainBlog/> */}
       <SideBar/>
      
       <Header/>

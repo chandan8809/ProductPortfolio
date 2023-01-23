@@ -39,7 +39,7 @@ and supporting the product launch process, and as well as experience with produc
             <div className='px-64 py-32' 
  >
               <motion.p 
-                className='text-7xl text-gray-600  inline-block font-base' 
+                className='text-7xl text-gray-600  inline-block font-base font-ubanto' 
                 initial={{x:-200,opacity:0}} 
                 animate={{ x: 0, opacity:1 ,transition:{duration:"2",type:"spring"} }} 
                 transition={{ type:"spring", duration: 2 ,delay: 0.2,bounce:0.5}}
@@ -47,14 +47,14 @@ and supporting the product launch process, and as well as experience with produc
                 dragConstraints={{ left: 0, right: 0 }}
                 >HELLO,<br/> I'AM<br/>BALAJI K</motion.p>
 
-              <motion.p ref={ref} style={{ scale: scrollYProgress,transformOrigin: "10%" }} className='uppercase text-4xl text-gray-800 pt-8 font-bold tracking-wide'>product analyst </motion.p>
+              <motion.p ref={ref} style={{ scale: scrollYProgress,transformOrigin: "10%" }} className='uppercase text-4xl text-gray-800 pt-8 font-bold tracking-wide font-ubanto'>product analyst </motion.p>
             </div>
           </div>
  
           <div className='absolute bg-white bottom-[-180px] w-[80%] left-28 right-0 mx-auto p-12 text-gray-800 bg-gradient-to-br from-white to-gray-50 shadow-lg'>
-          <header className='text-3xl font-semibold tracking-wide border-b-4 border-red-500 inline-block mb-8'>A LITTLE ABOUT ME</header>
+          <header className='text-3xl font-semibold tracking-wide border-b-4 border-red-500 inline-block mb-8 font-ubanto'>A LITTLE ABOUT ME</header>
            
-            <p className=' text-gray-500 pt-2 text-2xl font-link font-light' >Product & Quality analyst with two year of experience.
+            <p className=' pt-2 text-xl font-link font-light' >Product & Quality analyst with two year of experience.
 plays a key role in delighting customers and advancing the goals of the business,
 gathering and analyzing customer feedback, working with cross-functional teams to bring products to market,
 and supporting the product launch process, and as well as experience with product development and management </p>

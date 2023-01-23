@@ -19,7 +19,7 @@ const WorkProgress = () => {
          
     <main className='px-6 py-16 space-y-6  bg-gray-100 mx-auto  lg:bg-gray-100'>
         <div className='lg:w-[calc(100%-210px)] lg:ml-auto lg:mr-0'>
-            <p className='text-3xl font-semibold tracking-wide border-b-4 border-red-500 inline-block'>WORK PROCESS</p>
+            <p className='text-3xl font-semibold tracking-wide border-b-4 border-red-500 inline-block font-ubanto'>WORK PROCESS</p>
             <div className='pr-20'>
                 <p className='text-2xl text-gray-500 pt-10 text-center font-extralight'>Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do.</p>
             </div>

@@ -22,7 +22,7 @@ const Skills = () => {
     
     <main className='px-6 py-16 space-y-6  bg-gray-100 mx-auto  lg:bg-white'>
         <div className='lg:w-[calc(100%-210px)] lg:ml-auto lg:mr-0'>
-            <p className='text-3xl font-semibold tracking-wide border-b-4 border-red-500 inline-block'>WHAT I DO</p>
+            <p className='text-3xl font-semibold tracking-wide border-b-4 border-red-500 inline-block font-ubanto'>WHAT I DO</p>
             <div className='flex flex-col  items-center gap-20 lg:flex-row lg:pt-20 lg:flex-wrap px-16'>
 
                 <div className='flex  items-start gap-5 flex-[20%]'>

@@ -72,7 +72,7 @@ const Education = () => {
     <div className=' bg-gray-100  lg:bg-gray-100'>
   
     <main className="px-6 py-16 space-y-6  mx-auto lg:w-[calc(100%-210px)] lg:ml-auto lg:mr-0 ">
-      <p ref={ref} className="text-3xl  font-semibold tracking-wide border-b-4 border-red-500 inline-block uppercase">
+      <p ref={ref} className="text-3xl  font-semibold tracking-wide border-b-4 border-red-500 inline-block uppercase font-ubanto">
         
        experience
        
