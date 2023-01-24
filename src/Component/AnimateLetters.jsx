@@ -16,7 +16,7 @@ const AnimateLetters = ({ text }) => {
   const child = {
     visible: {
       opacity: 1,
-      x: 0,
+      x: 0,   
       transition: {
         type: "spring",
         damping: 12,
