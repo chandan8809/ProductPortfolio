@@ -23,12 +23,18 @@ import AM from '../assert/AM.svg'
 
 const Education = () => {
   const ref=useRef(null)
+  const ref2=useRef(null)
   const isInView=useInView(ref,{
-    margin: "600px 0px -300px 0px"
+    margin: "300px 0px -300px 0px"
+  })
+  const isInView2=useInView(ref2,{
+    margin: "600px 0px 600px 0px"
   })
   console.log("is",isInView)
+  console.log("is2",isInView2)
 
   let status= isInView ? "active" : "inactive" 
+  let status2= isInView2 ? "active" : "inactive" 
   const childLeft={
     active:{
       opacity:1,
@@ -69,13 +75,11 @@ const Education = () => {
   }
     
   return (
-    <div className=' bg-gray-100  lg:bg-gray-100'>
+    <div className=' bg-gray-100  lg:bg-gray-100' id='exp'>
   
     <main className="px-6 py-16 space-y-6  mx-auto lg:w-[calc(100%-210px)] lg:ml-auto lg:mr-0 ">
       <p ref={ref} className="text-3xl  font-semibold tracking-wide border-b-4 border-red-500 inline-block uppercase font-ubanto">
-        
        experience
-       
       </p>
 
       <motion.div variants={container}  animate="show"
@@ -198,9 +202,9 @@ Mar 2021 - Apr 2022
             color="text.secondary"
           >
         
-        <motion.div variants={childRight} transition={{duration:1,delay:'0.8',transition:{type:"spring"}}} animate={status} initial={false}>
+        <motion.div variants={childRight} transition={{duration:1,delay:'0.8',transition:{type:"spring"}}} animate={status2} initial={false}>
 
-        <p className='text-red-500'>Jan 2021 - Mar 2021</p>
+        <p ref={ref2} className='text-red-500'>Jan 2021 - Mar 2021</p>
         
          </motion.div>
         
@@ -214,7 +218,7 @@ Mar 2021 - Apr 2022
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
           
-          <motion.div variants={childLeft} transition={{duration:1,delay:"0.8"}} animate={status} initial={false}>
+          <motion.div variants={childLeft} transition={{duration:1,delay:"0.8"}} animate={status2} initial={false}>
          <div className='border-2  inline-block p-4 bg-gradient-to-br from-white to-blue-50 rounded-md '>
           <Typography variant="h6" component="span">
             
@@ -252,7 +256,7 @@ Created a dashboard module with all the pending tickets.</p>
             color="text.secondary"
           >
         
-        <motion.div className='text-red-500' variants={childLeft} transition={{duration:1,delay:"1.2",transition:{type:"spring"}}} animate={status} initial={false}>
+        <motion.div className='text-red-500' variants={childLeft} transition={{duration:1,delay:"1.2",transition:{type:"spring"}}} animate={status2} initial={false}>
 
           Aug 2017 - March 2021
 
@@ -276,7 +280,7 @@ Created a dashboard module with all the pending tickets.</p>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
 
 
-        <motion.div  className='text-left ' variants={childRight} transition={{duration:1,delay:"1.2",transition:{type:"spring"}}} animate={status} initial={false}>
+        <motion.div  className='text-left ' variants={childRight} transition={{duration:1,delay:"1.2",transition:{type:"spring"}}} animate={status2} initial={false}>
          <div className='border-2  inline-block p-4 bg-white rounded-md bg-gradient-to-bl from-white to-blue-50'>
           <div className='flex pb-2 '>
           <Typography variant="h6" component="span">

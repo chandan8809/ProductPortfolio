@@ -17,7 +17,7 @@ const WorkProgress = () => {
   return (
     <div>
          
-    <main className='px-6 py-16 space-y-6  bg-gray-100 mx-auto mt-[-200px] lg:mt-0 lg:bg-gray-100'>
+    <main className='px-6 py-16 space-y-6  bg-gray-100 mx-auto mt-[-200px] lg:mt-0 lg:bg-white'>
         <div className='lg:w-[calc(100%-210px)] lg:ml-auto lg:mr-0'>
             <p className='text-3xl font-semibold tracking-wide border-b-4 border-red-500 inline-block font-ubanto'>WORK PROCESS</p>
             <div className='pr-0 lg:pr-20'>

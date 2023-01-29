@@ -6,7 +6,7 @@ import TextareaAutosize from '@mui/base/TextareaAutosize';
 
 const ContactMe = () => {
   return (
-    <main style={{ 
+    <main id='touch' style={{ 
       backgroundImage: "url(https://cdn.pixabay.com/photo/2016/06/04/14/56/icon-1435687_1280.png)",
       backgroundRepeat: 'no-repeat',
       backgroundSize: "cover",

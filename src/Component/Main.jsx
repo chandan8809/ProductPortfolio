@@ -12,7 +12,7 @@ const Main = () => {
   });
 
   return (
-    <main>
+    <main className='bg-gray-100'>
      
       {/* mobile */}
       <div className='px-6 font-link py-16 space-y-6   mx-auto lg:hidden'>
@@ -51,7 +51,7 @@ and supporting the product launch process, and as well as experience with produc
             </div>
           </div>
  
-          <div className='absolute bg-white bottom-[-180px] w-[80%] left-28 right-0 mx-auto p-12 text-gray-800 bg-gradient-to-br from-white to-gray-50 shadow-lg'>
+          <div className='absolute bg-white bottom-[-120px] w-[80%] left-28 right-0 mx-auto p-12 text-gray-800 bg-gradient-to-br from-white to-gray-50 shadow-lg  ' id='contact'>
           <header className='text-3xl font-semibold tracking-wide border-b-4 border-red-500 inline-block mb-8 font-ubanto'>A LITTLE ABOUT ME</header>
            
             <p className=' pt-2 text-xl font-link font-light' >Product & Quality analyst with two year of experience.

@@ -1,47 +1,94 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import ResponsiveAppBar from '../ResponsiveAppBar'
+import {  Link } from "react-router-dom";
+import { useLocation } from 'react-router-dom'
+import { motion,AnimatePresence } from 'framer-motion';
+
 
 const MainBlog = () => {
+  const location=useLocation()
+  console.log("loca",location)
+  useEffect(()=>{
+    topFunction()  
+   },[location])
+
+   function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
   return (
-    <main className='px-16'>
-        <div>
-            <p className='text-5xl text-center pt-10 leading-[60px] text-gray-900 font-sans'>- Mark is a Senior Product Manager, Tinkerer,<br/> and Gadget Enthusiast in the USA</p>
+    <main >
+        <ResponsiveAppBar/>
+        <AnimatePresence>
+          <motion.div className='px-16' animate={{y:"0px",opacity:1, transition: {
+          type: "spring",
+          damping: 20,
+          stiffness: 100,
+        } }} initial={{y:"200px",opacity:0}} exit={{y:"-100px",opacity:0}}>
+          <div>
+              <p className='text-5xl text-center py-28 leading-[60px] text-gray-800 font-sans font-ubanto'> Products</p>
 
-        </div>
-        <div className='flex w-[1000px] justify-center mx-auto mt-10 flex-wrap'>
-            <div className='relative  flex-[50%]'>
-                <p className='text-2xl absolute inset-0 top-[45%] text-center'>Tezpos Billing System</p>
-                <img  src="https://tezos.com/news/Fuelarts-sm.jpg" alt="" />
-            </div>
-            <div className='relative h-[300px]  flex-[50%]'>
-            <p className='text-2xl absolute inset-0 top-[45%] text-center'>Tezpos Billing System</p>
-            <img  src="https://tezos.com/news/Fuelarts-sm.jpg" alt="" />
-            </div>
-            <div className='relative h-[300px]  flex-[50%]'>
-            <p className='text-2xl absolute inset-0 top-[45%] text-center'>Tezpos Billing System</p>
-            <img  src="https://tezos.com/news/Fuelarts-sm.jpg" alt="" />
-            </div>
-            <div className='relative h-[300px] flex-[50%]'>
-            <p className='text-2xl absolute inset-0 top-[45%] text-center'>Tezpos Billing System</p>
-            <img  src="https://tezos.com/news/Fuelarts-sm.jpg" alt="" />
-            </div>
-            <div className='relative h-[300px] flex-[50%]'>
-            <p className='text-2xl absolute inset-0 top-[45%] text-center'>Tezpos Billing System</p>
-            <img  src="https://tezos.com/news/Fuelarts-sm.jpg" alt="" />
-            </div>
-            <div className='relative h-[300px] flex-[50%]'>
-            <p className='text-2xl absolute inset-0 top-[45%] text-center'>Tezpos Billing System</p>
-            <img  src="https://tezos.com/news/Fuelarts-sm.jpg" alt="" />
-            </div>
+          </div>
+        
+          <section className="section">
+            <div className="container border-gray-500 ">
+        
+              <div className='h-500px rounded-lg '>
+                <img
+                  src="https://cdn.pixabay.com/photo/2019/10/18/19/51/financial-4560047_1280.jpg"
+                  alt="Avatar"
+                
+                  className="object-cover h-[400px] w-full overflow-hidden"
+                />
+              </div>
           
-        </div>
+              <Link to="/tezpos">
+            
+              <div className="overlay-top">
+                <div className="text ">Tez Pos</div>
+              </div>
 
-        <div className='border w-[1000px] mx-auto'>
-            <p className='text-2xl py-20 text-gray-900 font-sans  px-32'>“Mark is full of creative enthusiasm, and always connects 
-            the dots between the work at hand and his unceasing exploration of new tech, new ideas,
-            new tools and new people. Mark is fearless in his research and outreach and definitely 
-            one of the most generous people I’ve met in sharing what he’s learned and creating opportunities for others.”</p>
+              </Link>
+            </div>
+            
 
-        </div>
+            <div className="container">
+              <img
+                src="https://cdn.pixabay.com/photo/2019/04/26/07/14/store-4156934_1280.png"
+                alt="Avatar"
+                className="object-cover h-[400px] w-full"
+              />
+              <Link to="/Consumer">
+              <div className="overlay-top">
+                <div className="text">Apna Mart</div>
+              </div>
+              </Link>
+            </div>
+
+            <div className="container">
+              <img
+                src="https://cdn.pixabay.com/photo/2016/08/20/06/44/e-commerce-1606962_1280.png"
+                alt="Avatar"
+                className="object-cover h-[400px] w-full"
+              />
+              <Link to="/Store">
+              <div className="overlay-top">
+                <div className="text">Apna Store</div>
+              </div>
+              </Link>
+            </div>
+
+      
+      </section>
+
+          <div className='w-[1000px] mx-auto font-ubanto py-20'>
+              
+          </div>
+
+          </motion.div>
+        </AnimatePresence>
+    
 
     </main>
   )
